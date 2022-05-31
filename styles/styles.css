@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    margin: 0 3%;
+}
+
+#logo {
+    max-height: 4em;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background-color: rgb(227, 97, 180);
+    color: white;
+    margin: 1%;
+    border-radius: 3px;
+    box-shadow: 8px 8px pink;
+    font-size: 1.5em;
+    display: flex;
+    flex-flow: row warp;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav>a {
+    color: white;
+    transition: all 1.3s ease;
+}
+/*display block para celular*/
+a {
+    text-decoration: none !important;
+}
+
+nav>a.links:hover {
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+}
+
+#idiomas {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2%;
+}
+
+label {
+    margin-right: 0.5%;
+}
+
+h1 {
+    margin-bottom: 4%;
+}
+
+main {
+    width: 50%;
+    color: white;
+    margin: 5% auto;
+    padding: 5%;
+    text-align: center;
+    background-color: #33152fb6;
+    border-radius: 300px;
+}
+
+aside {
+    opacity: 80%;
+    padding-top: 50%;
+    height: 15%;
+    background-image: url(/img/pexels-dima-valkov-3734027.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-color: beige;
+    clear: both;
+}
+
+aside>h2 {
+    text-align: center;
+    background-color: #2e132aa4;
+}
+
+footer {
+    background-image: linear-gradient(rgb(227, 97, 180), pink);
+    text-align: center;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+footer>a {
+    padding-inline: 3%;
+}
+
+h3 {
+    padding-bottom: 2%;
+}
+
+span {
+    font-style: italic;
+    font-weight: 800;
+    height: min-content;
+}
+
+span>p {
+    text-align: center;
+    color: #33152f;
+    font-size: large;
+}
+
+.social {
+    color: #832a77;
+}
+
+.social:hover {
+    color: #2e132a;
+}
+
+
+/*SECCION DE PRODUCTOS*/
+
+section.productos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9 {
+    height: 400px;
+    width: 400px;
+    background-position: center; 
+    background-size: cover;
+    margin: 2%;
+}
+
+#div1:hover,#div2:hover,#div3:hover,#div4:hover,#div5:hover,#div6:hover,#div7:hover,#div8:hover,#div9:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+#div1 {    
+    background-image: url(../img/pexels-dmitry-zvolskiy-1721934.jpg);
+}
+
+#div2 {
+    background-image: url(../img/pexels-elli-1854652.jpg);
+}
+
+#div3 {
+    background-image: url(../img/pexels-vojtech-okenka-1055272.jpg);
+}
+
+#div4 {
+    background-image: url(../img/pexels-alesia-talkachova-10176097.jpg);
+}
+
+#div5 {
+    background-image: url(../img/pexels-regina-ferraz-6133480.jpg);    
+}
+
+#div6 {
+    background-image: url(../img/delicious-cake-with-fresh-plums-and-raspberries.jpg);
+}
+
+#div7 {
+    background-image: url(../img/croissants-on-wooden-cutting-board.jpg);
+}
+
+#div8 {
+    background-image: url(../img/pexels-jess-loiterton-6390689.jpg);
+}
+
+#div9 {
+    background-image: url(../img/american-heritage-chocolate-4Id4561zFz8-unsplash.jpg);    
+}
+
+/*SECCION DE CONTACTO*/
+
+fieldset {
+    background-image: url(/img/pexels-alizee-marchand-947801.jpg);
+    background-position: center; 
+    background-size: cover;
+    height: 85vh;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+fieldset>form {
+    padding: 3%;
+    background-color: rgb(255, 255, 255);
+    color: #20051c;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#invalid {
+    color: red;
+    font-weight: bolder;
+}
+
+.valid, #valid {
+    color: seagreen;
+    font-weight: bolder;
+}
