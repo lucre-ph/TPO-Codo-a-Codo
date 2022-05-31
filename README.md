@@ -1,7 +1,5 @@
 # TPO-Codo-a-Codo
-HTML, CSS, Javascript
-
-TPO Desarrollo Web: HTML, CSS y Javascript
+Desarrollo Web: HTML, CSS y Javascript
 
 ***Requisitos:***
 * Poseer al menos 3 paginas HTML, siendo su tematica libre. En caso de ser un Sitio Web estilo One Page, el mismo debera tener al menos 3 secciones.
