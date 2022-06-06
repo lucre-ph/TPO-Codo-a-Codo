@@ -25,7 +25,7 @@ nav {
     box-shadow: 8px 8px pink;
     font-size: 1.5em;
     display: flex;
-    flex-flow: row warp;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -34,14 +34,9 @@ nav>a {
     color: white;
     transition: all 1.3s ease;
 }
-/*display block para celular*/
+
 a {
     text-decoration: none !important;
-}
-
-nav>a.links:hover {
-    color: rgb(0, 0, 0);
-    font-size: 1.5em;
 }
 
 #idiomas {
@@ -76,6 +71,7 @@ aside {
     background-attachment: fixed;
     background-size: 100%;
     background-color: beige;
+    background-repeat: no-repeat;
     clear: both;
 }
 
@@ -210,4 +206,87 @@ fieldset>form {
 .valid, #valid {
     color: seagreen;
     font-weight: bolder;
+}
+
+/*RESPONSIVENESS*/
+@media all and (min-width: 801px) {
+    nav>a.links:hover {
+        color: rgb(0, 0, 0);
+        font-size: 1.1em;
+    }
+}
+
+@media all and (max-width: 800px) {
+    header {
+        position: static;
+        top: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    nav {
+        margin: 0;
+        font-size: 1em;
+    };
+    
+    #logo {
+        max-height: 3em;
+        display: flex;
+        align-items: center;
+    }
+
+    form#idiomas {
+        display: none;
+    }
+    
+    main {
+        width: 100%;
+        color: white;
+        margin: 5% auto;
+        box-sizing: unset;
+        padding: 5%;
+        clear: both;
+        text-align: center;
+        background-color: #33152fb6;
+        border-radius: unset;
+    }
+}
+
+@media all and (max-width: 600) {
+    header {
+        position: static;
+        top: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    nav {
+        font-size: 0.5em;
+        flex-flow: column wrap;
+    };
+    
+    #logo {
+        max-height: 1em;
+        display: flex;
+        align-items: center;
+    }
+    
+    form#idiomas {
+        display: none;
+    }
+
+    main {
+        box-sizing: unset;
+        width: 100%;
+        color: white;
+        margin: 5% auto;
+        border-radius: unset;
+        text-align: center;
+        background-color: #33152fb6;
+        clear: both;
+    }
+
+    aside {
+        display: none;
+    }
 }
